@@ -297,10 +297,10 @@ start.int-example.com
 192.168.10.100
 ```
 
-KG users can continue using the existing DNS namespace:
+Kakaocloud users can continue using the existing DNS namespace:
 
 ```text
-KG User
+Kakaocloud User
    │
    ▼
 Existing DNS
@@ -568,12 +568,12 @@ No Public DNS dependency is required for SAP PCE DNS resolution.
 
 ---
 
-# 17. Option 2 - KG User Flow
+# 17. Option 2 - Kakaocloud User Flow
 
-KG users can continue using the existing DNS namespace.
+kakaocloud users can continue using the existing DNS namespace.
 
 ```text
-KG User
+kakaocloud User
    │
    ▼
 Existing DNS
@@ -609,7 +609,7 @@ start.int-example.com
 
 - Entire SAP PCE DNS resolution path remains private
 - No dependency on Public DNS infrastructure
-- Clear separation between SAP PCE and KG DNS namespaces
+- Clear separation between SAP PCE and kakaocloud DNS namespaces
 - Easier alignment with strict security policies
 - Independent DNS management for SAP PCE
 - Reduced dependency on external DNS availability
@@ -620,7 +620,7 @@ start.int-example.com
 
 - Additional DNS Zone management
 - DNS records may need to be maintained in multiple Zones
-- Different hostnames may be required for SAP PCE and KG users
+- Different hostnames may be required for SAP PCE and kakaocloud users
 - Application configuration may differ between environments
 - TLS certificate management may require additional SANs/domains
 - Additional operational procedures required
@@ -633,7 +633,7 @@ start.int-example.com
 |---|---|---|
 | SAP PCE DNS Server | KC Private DNS | KC Private DNS |
 | SAP PCE Namespace | `example.com` | `int-example.com` |
-| KG Namespace | `example.com` | `example.com` |
+| kakaocloud Namespace | `example.com` | `example.com` |
 | Route 53 Public Hosted Zone | Used | Not required |
 | Public DNS Dependency | Yes | No |
 | Private DNS Path | Partial | Full |
